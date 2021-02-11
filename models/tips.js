@@ -2,13 +2,13 @@ const { query } = require("../db");
 
 async function getAllTips() {
   const result = await query(`SELECT * FROM tips;`);
-  console.log(result.rows);
+  //console.log(result.rows);
   return result.rows;
 }
 
 async function getRandomTip() {
   const result = await query(`SELECT * FROM tips ORDER BY RANDOM() LIMIT 1;`);
-  console.log(result.rows);
+  //console.log(result.rows);
   return result.rows;
 }
 

@@ -28,7 +28,7 @@ async function populateInteractionTable(array) {
       [date, topic, discussion, team_id]
     );
 
-    console.log(`Log:Populated table with ${topic}`);
+    //console.log(`Log:Populated table with ${topic}`);
   }
 }
 

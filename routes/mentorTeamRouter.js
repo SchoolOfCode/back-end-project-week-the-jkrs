@@ -35,7 +35,7 @@ router.post("/", async function (req, res, next) {
     const team = req.body;
     const result = await createMentorTeam(team);
     res.json({ success: true });
-    console.log("created team: " + result[0].team_id);
+    // console.log("created team: " + result[0].team_id);
   } catch (err) {
     console.log(err);
   }
@@ -48,7 +48,7 @@ router.patch("/:id", async function (req, res, next) {
     const update = req.body;
     const result = await updateMentorTeam(update, id);
     res.json({ success: true });
-    console.log("patched team: " + result[0].team_id);
+    // console.log("patched team: " + result[0].team_id);
   } catch (err) {
     console.log(err);
   }
