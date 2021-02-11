@@ -62,7 +62,7 @@ router.patch("/:id", async function (req, res, next) {
     const update = req.body;
     const result = await updateUser(update, id);
     res.json({ success: true });
-    console.log("patched user with email: " + result[0].email);
+    //console.log("patched user with email: " + result[0].email);
   } catch (err) {
     console.log(err);
   }

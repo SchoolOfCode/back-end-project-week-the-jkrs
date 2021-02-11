@@ -9,7 +9,7 @@ async function createMentorTeamTable() {
             )`
   );
 
-  console.log("created mentor_team_table");
+  //console.log("created mentor_team_table");
 }
 
 createMentorTeamTable();

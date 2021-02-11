@@ -57,9 +57,9 @@ router.post("/", async function (req, res, next) {
   try {
     const interaction = req.body;
     const result = await createInteraction(interaction);
-    console.log(result);
+    //console.log(result);
     res.json({ success: true });
-    console.log("created row with topic: " + result[0].topic);
+    // console.log("created row with topic: " + result[0].topic);
   } catch (err) {
     console.log(err);
   }
@@ -72,7 +72,7 @@ router.patch("/:id", async function (req, res, next) {
     const interaction = req.body;
     const result = await updateInteraction(interaction, id);
     res.json({ success: true });
-    console.log("patched row with topic: " + result[0].topic);
+    // console.log("patched row with topic: " + result[0].topic);
   } catch (err) {
     console.log(err);
   }

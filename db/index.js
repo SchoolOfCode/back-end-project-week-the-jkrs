@@ -1,10 +1,5 @@
 const { Pool } = require("pg");
 const { credentials } = require("../config");
-// require("dotenv").config();
-
-// const pool = new Pool({
-//   // ssl: true,
-// });
 
 const pool = new Pool(credentials);
 

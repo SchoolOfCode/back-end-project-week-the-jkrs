@@ -26,9 +26,9 @@ async function populateMentorTeamTable(array) {
       [mentor_id, mentee_id]
     );
 
-    console.log(
-      `Log:Your new Mentor Team has been set up with ${mentor_id} + ${mentee_id}`
-    );
+    // console.log(
+    //   `Log:Your new Mentor Team has been set up with ${mentor_id} + ${mentee_id}`
+    // );
   }
 }
 

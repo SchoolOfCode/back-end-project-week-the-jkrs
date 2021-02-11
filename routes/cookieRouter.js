@@ -13,7 +13,7 @@ router.get("/", async function (req, res, next) {
       if (!auth_Stuff) {
         //No authentication info given
         res.setHeader("WWW-Authenticate", "Basic");
-        console.log(req.headers);
+        //console.log(req.headers);
         res.sendStatus(401);
       } else {
         step1 = new Buffer.from(auth_Stuff.split(" ")[1], "base64");
@@ -31,7 +31,7 @@ router.get("/", async function (req, res, next) {
         if (containsUserAndPass(mappedStuff, username, password)) {
           // if (step2[0] == "admin" && step2[1] == "admin") {
           //Correct username and password given
-          console.log("Welcome " + step2[0]);
+          //console.log("Welcome " + step2[0]);
           //Store a cookie with name=user and value=username
           // TODO:
           // res.cookie("user", username, { signed: true });

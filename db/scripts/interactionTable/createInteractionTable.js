@@ -11,7 +11,7 @@ async function createInteractionTable() {
             )`
   );
 
-  console.log("created interaction_table");
+  //console.log("created interaction_table");
 }
 
 createInteractionTable();

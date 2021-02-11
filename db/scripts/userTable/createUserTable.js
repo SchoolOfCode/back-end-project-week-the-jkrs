@@ -13,7 +13,7 @@ async function createUserTable() {
             )`
   );
 
-  console.log("created user_table");
+  //console.log("created user_table");
 }
 
 createUserTable();
