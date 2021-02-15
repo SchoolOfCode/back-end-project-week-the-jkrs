@@ -34,7 +34,7 @@ router.get("/:id", async function (req, res, next) {
 router.get("/", async function (req, res, next) {
   try {
     let email = req.query.email;
-    console.log(firstname);
+    //console.log(firstname);
     const result = await getUserByEmail(firstname);
     res.json({ success: true, data: result });
   } catch (err) {
@@ -46,10 +46,10 @@ router.get("/", async function (req, res, next) {
 router.post("/", async function (req, res, next) {
   try {
     const user = req.body;
-    console.log(user);
+    //console.log(user);
     const result = await createUser(user);
     res.json({ success: true });
-    console.log("created user with email: " + result[0].email);
+    //console.log("created user with email: " + result[0].email);
   } catch (err) {
     console.log(err);
   }
